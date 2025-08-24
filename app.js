@@ -11,8 +11,7 @@ const tareas = document.getElementById("lista-tareas");
 
 //Agregar tarea
 function insertarTarea() {
-
-    event.preventDefault()
+    
     //Creación de los elementos
 
 const nuevoTexto = document.createElement("span");
