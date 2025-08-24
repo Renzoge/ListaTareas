@@ -11,6 +11,8 @@ const tareas = document.getElementById("lista-tareas");
 
 //Agregar tarea
 function insertarTarea() {
+
+    event.preventDefault()
     //Creación de los elementos
 
 const nuevoTexto = document.createElement("span");
@@ -36,13 +38,13 @@ tareaNueva.classList.add("lis");
     }
             //Eliminar tarea
 
-         nuevoBoton.onclick= function(){
+         nuevoBoton.addEventListener("click", () => {
             tareaNueva.remove();
-         }   
+         }   )
     
 }
 
-agregar.onclick = insertarTarea;
+agregar.addEventListener("click", insertarTarea);
 
 
 
